@@ -1,0 +1,53 @@
+.code {
+  font-size: 2em;
+}
+.icon {
+  font-size: 1.25em;
+}
+
+.ui.message {
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+#love-u {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background: url("../images/campus.jpg") no-repeat center center; */
+  background-size: cover;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-form {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.ui.massive.form {
+  margin: 30px;
+}
+
+#delete {
+  display: inline;
+}

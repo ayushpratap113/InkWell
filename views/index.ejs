@@ -1,0 +1,139 @@
+<% include ./partials/header %>
+
+    <div class="ui main text container flex-row">
+        <div class="ui huge header">MOVIES</div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% allBlogs.forEach(function(blog){ %>
+                    <% if (blog.category==="Movies" ) { %>
+                        <div class="item">
+                            <div class="ui small image">
+                                <img class="ui centered rounded image" src="<%= blog.image %>" />
+                            </div>
+                            <div class="content">
+                                <div class="header""><%= blog.title %></div>
+                            <div class=" meta">
+                                    <span>
+                                        <%= blog.date.toDateString() %>
+                                    </span>
+                                </div>
+                                <div class="description">
+                                    <p><%- blog.body.substring(0, 100) %>...</p>
+                                </div>
+                                <a class="ui right labeled icon primary button" href="/blogs/<%= blog._id %>"><i
+                                        class="right arrow icon"></i>Read More</a>
+                            </div>
+                        </div>
+                        <% }}) %>
+            </div>
+        </div>
+
+        <div class="ui huge header">CRICKET</div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% allBlogs.forEach(function(blog){ %>
+                    <% if (blog.category==="Cricket" ) { %>
+                        <div class="item">
+                            <div class="ui small image">
+                                <img class="ui centered rounded image" src="<%= blog.image %>" />
+                            </div>
+                            <div class="content">
+                                <div class="header""><%= blog.title %></div>
+                            <div class=" meta">
+                                    <span>
+                                        <%= blog.date.toDateString() %>
+                                    </span>
+                                </div>
+                                <div class="description">
+                                    <p><%- blog.body.substring(0, 100) %>...</p>
+                                </div>
+                                <a class="ui right labeled icon primary button" href="/blogs/<%= blog._id %>"><i
+                                        class="right arrow icon"></i>Read More</a>
+                            </div>
+                        </div>
+                        <% }}) %>
+            </div>
+        </div>
+
+        <div class="ui huge header">MACHINE LEARNING</div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% allBlogs.forEach(function(blog){ %>
+                    <% if (blog.category==="Machine Learning" ) { %>
+                        <div class="item">
+                            <div class="ui small image">
+                                <img class="ui centered rounded image" src="<%= blog.image %>" />
+                            </div>
+                            <div class="content">
+                                <div class="header""><%= blog.title %></div>
+                            <div class=" meta">
+                                    <span>
+                                        <%= blog.date.toDateString() %>
+                                    </span>
+                                </div>
+                                <div class="description">
+                                    <p><%- blog.body.substring(0, 100) %>...</p>
+                                </div>
+                                <a class="ui right labeled icon primary button" href="/blogs/<%= blog._id %>"><i
+                                        class="right arrow icon"></i>Read More</a>
+                            </div>
+                        </div>
+                        <% }}) %>
+            </div>
+        </div>
+
+        <div class="ui huge header">WEB DEVELOPMENT</div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% allBlogs.forEach(function(blog){ %>
+                    <% if (blog.category==="Web Development" ) { %>
+                        <div class="item">
+                            <div class="ui small image">
+                                <img class="ui centered rounded image" src="<%= blog.image %>" />
+                            </div>
+                            <div class="content">
+                                <div class="header""><%= blog.title %></div>
+                            <div class=" meta">
+                                    <span>
+                                        <%= blog.date.toDateString() %>
+                                    </span>
+                                </div>
+                                <div class="description">
+                                    <p><%- blog.body.substring(0, 100) %>...</p>
+                                </div>
+                                <a class="ui right labeled icon primary button" href="/blogs/<%= blog._id %>"><i
+                                        class="right arrow icon"></i>Read More</a>
+                            </div>
+                        </div>
+                        <% }}) %>
+            </div>
+        </div>
+
+        <div class="ui huge header">TABLE TENNIS</div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% allBlogs.forEach(function(blog){ %>
+                    <% if (blog.category==="Table Tennis" ) { %>
+                        <div class="item">
+                            <div class="ui small image">
+                                <img class="ui centered rounded image" src="<%= blog.image %>" />
+                            </div>
+                            <div class="content">
+                                <div class="header""><%= blog.title %></div>
+                            <div class=" meta">
+                                    <span>
+                                        <%= blog.date.toDateString() %>
+                                    </span>
+                                </div>
+                                <div class="description">
+                                    <p><%- blog.body.substring(0, 100) %>...</p>
+                                </div>
+                                <a class="ui right labeled icon primary button" href="/blogs/<%= blog._id %>"><i
+                                        class="right arrow icon"></i>Read More</a>
+                            </div>
+                        </div>
+                        <% }}) %>
+            </div>
+        </div>
+    </div>
+    <% include ./partials/footer %>

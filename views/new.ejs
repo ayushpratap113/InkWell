@@ -1,0 +1,39 @@
+<% include ./partials/header %>
+
+    <div class="ui main text container segment">
+        <h2 class="ui center aligned icon header">
+            <i class="circular users icon"></i>
+            New Post
+        </h2>
+        <form action="/blogs" method="POST" class="ui form">
+            <div class="field">
+                <label>Title</label>
+                <input type="text" name="blog[title]" placeholder="title">
+            </div>
+            <div class="field">
+                <label>Category</label>
+                <select name="blog[category]" id="">
+                    <option value="">Select Category</option>
+                    <option value="Web development">Web development</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Movies">Movies</option>
+                </select>
+
+            </div>
+            <div class="field">
+                <label>Image</label>
+                <input type="text" name="blog[image]" placeholder="image url">
+            </div>
+            <div class="field">
+                <label>Blog Content</label>
+                <textarea name="blog[body]">
+
+            </textarea>
+            </div>
+            <button class="ui inverted big violet button">Submit</button>
+        </form>
+    </div>
+
+    <!-- <% include ./partials/footer %> -->
